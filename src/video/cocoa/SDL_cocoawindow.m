@@ -2352,7 +2352,7 @@ int Cocoa_GetWindowWMInfo(_THIS, SDL_Window *window, SDL_SysWMinfo *info)
 
         info->subsystem = SDL_SYSWM_COCOA;
         info->info.cocoa.window = nswindow;
-        return 0;
+        return SDL_TRUE;
     }
 }
 
